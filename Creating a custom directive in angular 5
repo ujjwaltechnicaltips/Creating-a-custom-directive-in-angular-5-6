@@ -1,0 +1,24 @@
+app.component.html
+___________________
+<h1 RedColor> this Directive  how to create (ng g directive RedColor</h1>
+
+----------------------------------------------------------------------------
+red-color.directive.ts
+_____________________
+
+import { Directive, ElementRef} from '@angular/core';
+
+@Directive({
+  selector: '[RedColor]'
+})
+export class RedColorDirective {
+
+  constructor(Element:ElementRef) { 
+Element.nativeElement.style.color="red";
+
+  }
+
+} 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+cli -   ng g directive ColorRed
